@@ -5,10 +5,6 @@ const locationsRepeated = data.species.reduce((pv, cv) => {
 }, []);
 const locations = [...new Set(locationsRepeated)];
 
-const test = {
-    includesName: true,
-    sorted: true,
-};
 
 function getAnimalByLocation(locationParm) {
     const speciesList = data.species.filter(
